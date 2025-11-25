@@ -195,7 +195,7 @@
     <script>
         // ================= CONFIGURATION =================
         // ใส่ Web App URL ที่ได้จาก Google Apps Script ที่นี่
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzPbnSonrQbpbrp2HdTpBfZaIdbZS6z9RtZQfcOnB2I7NcIGh3n94UAchM01c4L06zS/exec"; 
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwoYfJdOwXK6RXJG9yrqRsEgSxfjzna97Ds4vDIqk8MytBmE6KkVVaPSdclS_M5ziOZ/exec"; 
         
         // ใส่ LIFF ID (ถ้ามี)
         const MY_LIFF_ID = "2008566287-46dOm6qM"; 
@@ -261,7 +261,7 @@
 
             try {
                 // 1. ส่งข้อมูลไป Google Sheets
-                if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== "https://script.google.com/macros/s/AKfycbzPbnSonrQbpbrp2HdTpBfZaIdbZS6z9RtZQfcOnB2I7NcIGh3n94UAchM01c4L06zS/exec") {
+                if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== "https://script.google.com/macros/s/AKfycbwoYfJdOwXK6RXJG9yrqRsEgSxfjzna97Ds4vDIqk8MytBmE6KkVVaPSdclS_M5ziOZ/exec") {
                     await fetch(GOOGLE_SCRIPT_URL, {
                         method: 'POST',
                         mode: 'no-cors', // สำคัญ: เพื่อไม่ให้ติด Cross-Origin
@@ -271,7 +271,7 @@
                         body: JSON.stringify(data)
                     });
                 } else {
-                    console.warn("ยังไม่ได้ใส่ GOOGLE_SCRIPT_URL ข้อมูลจะไม่ถูกบันทึกลง Sheet");
+                    console.warn("https://script.google.com/macros/s/AKfycbwoYfJdOwXK6RXJG9yrqRsEgSxfjzna97Ds4vDIqk8MytBmE6KkVVaPSdclS_M5ziOZ/exec");
                 }
 
                 // สร้างข้อความสรุปสำหรับส่งเข้า LINE
